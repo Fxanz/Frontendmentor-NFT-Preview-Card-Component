@@ -15,7 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 *,
-*::before *::after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -83,14 +84,16 @@ main {
 }
 
 .text h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--Soft-blue);
   font-weight: var(--thin-font);
   line-height: 1.6rem;
+  margin: 1.7rem 0;
 }
 
 .icon {
   display: flex;
+  margin: 1.5rem 0;
   justify-content: space-between;
 }
 
@@ -118,6 +121,7 @@ hr {
   border: none;
   background-color: var(--Very-dark-blue-line);
   height: 1px;
+  margin: 0 0 1rem 0;
 }
 
 .eth,
