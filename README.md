@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site](https://fxanz.github.io/Frontendmentor-NFT-Preview-Card-Component/)
+- Solution URL: [My Solution](https://your-solution-url.com)
+- Live Site URL: [Live Site](https://fxanz.github.io/Frontendmentor-NFT-Preview-Card-Component/)
 
 ## My process
 
