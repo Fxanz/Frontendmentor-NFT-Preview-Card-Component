@@ -73,7 +73,7 @@ main {
 }
 
 .text h1 {
-  font-size: 23px;
+  font-size: 19px;
   font-weight: var(--bold-font);
   transition: 0.5s;
   cursor: pointer;
