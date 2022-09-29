@@ -1,43 +1,3 @@
-/* 
-
-### Primary
-
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
-
-### Neutral
-
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 18px
-
-### Font
-
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600
-
-font-family: 'Outfit', sans-serif;
-
-
-
-Equilibrium #3429
-
-Our Equilibrium collection promotes balance and calm.
-
-0.041 ETH
-3 days left
-
-Creation of Jules Wyvern
-
-
-*/
 :root {
   --thin-font: 400;
   --bold-font: 600;
@@ -53,37 +13,38 @@ Creation of Jules Wyvern
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 *,
 *::before *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
+  margin: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   background-color: var(--Very-dark-blue-main);
   font-family: "outfit", sans-serif;
   font-size: 18px;
-  min-height: 100vh;
-  overflow: hidden;
 }
+
 main {
   background-color: var(--Very-dark-blue-card);
   color: var(--White);
   padding: 20px;
   max-width: 300px;
+  margin: 0;
   border-radius: 15px;
 }
-.container {
-  margin: 30px auto;
-  padding: 0 10px;
-}
+
 .img {
   position: relative;
 }
+
 .main-img {
   width: 100%;
   border-radius: 15px;
@@ -101,6 +62,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: hsl(178, 100%, 50%, 0.3);
+  cursor: pointer;
   transition: 1s;
 }
 
@@ -108,65 +70,90 @@ main {
   opacity: 1;
   transition: 1s;
 }
+
 .text h1 {
+  margin-top: 1rem;
   font-size: 20px;
   font-weight: var(--bold-font);
+  transition: 0.5s;
+  cursor: pointer;
 }
+.text h1:hover {
+  color: var(--Cyan);
+}
+
 .text h2 {
   font-size: 16px;
   color: var(--Soft-blue);
   font-weight: var(--thin-font);
   line-height: 1.6rem;
 }
+
 .icon {
   display: flex;
   justify-content: space-between;
 }
+
 .eth h3 {
   font-size: 15px;
   color: var(--Cyan);
   font-weight: var(--bold-font);
 }
+
 .time h3 {
   font-size: 15px;
   color: var(--Soft-blue);
   font-weight: var(--bold-font);
 }
+
 .eth img {
   margin-right: 10px;
 }
+
 .time img {
   margin-right: 10px;
 }
+
 hr {
   border: none;
   background-color: var(--Very-dark-blue-line);
   height: 1px;
 }
+
 .eth,
 .time {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .creator {
   display: flex;
   align-items: center;
 }
+
 .creator img {
   width: 30px;
   margin-right: 1rem;
   border: 2px solid var(--White);
   border-radius: 100px;
 }
+
 .creator h4 {
   font-size: 15px;
-  color: #697f9d;
+  color: var(--Soft-blue);
   font-weight: var(--thin-font);
 }
+
 .creator h4 span {
   color: var(--White);
+  transition: 0.5s;
+  cursor: pointer;
 }
+.creator h4 span:hover {
+  color: var(--Cyan);
+}
+
 .attribution {
   margin-top: 1rem;
   font-size: 11px;
